@@ -1,0 +1,43 @@
+# Dependencies - never send to Docker
+node_modules
+**/node_modules
+
+# Git
+.git
+.gitignore
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+
+# Build output
+dist
+out
+*.tgz
+coverage
+*.lcov
+
+# Cache
+.cache
+*.tsbuildinfo
+.eslintcache
+
+# IDE
+.idea
+.DS_Store
+
+# Dev tools
+.husky
+.lintstagedrc
+.prettierrc
+.prettierignore
+
+# Client source (not needed for server deploy, but keep package.json for bun workspace)
+packages/client/src
+packages/client/public
+packages/client/node_modules
