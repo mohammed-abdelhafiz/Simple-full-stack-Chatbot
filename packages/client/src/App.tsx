@@ -10,7 +10,7 @@ function App() {
       .catch((err) => console.error(err));
   }, []);
 
-  return <div>{message}</div>;
+  return <div className="text-3xl underline font-bold">{message}</div>;
 }
 
 export default App;
