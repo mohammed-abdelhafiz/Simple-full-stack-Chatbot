@@ -5,7 +5,7 @@ import type { RefObject } from "react";
 interface ChatListViewProps {
   messages: Message[];
   isChatbotThinking: boolean;
-  scrollContainer: RefObject<HTMLDivElement>;
+  scrollContainer: RefObject<HTMLDivElement | null>;
 }
 export const ChatListView = ({
   messages,

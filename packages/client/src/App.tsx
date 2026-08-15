@@ -8,7 +8,7 @@ function App() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [isChatbotThinking, setIsChatbotThinking] = useState(false);
   const conversationId = useRef(crypto.randomUUID());
-  const scrollContainer = useRef<HTMLDivElement>(null);
+  const scrollContainer = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const scrollContainerElement = scrollContainer.current;
