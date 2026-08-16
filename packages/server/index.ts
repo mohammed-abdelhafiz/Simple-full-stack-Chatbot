@@ -3,7 +3,7 @@ import cors from "cors";
 import "dotenv/config";
 import chatRoutes from "./routes/chat.routes";
 
-const port = (process.env.PORT as unknown as number) || 5000;
+const port = process.env.PORT ? Number(process.env.PORT) : 8080;
 
 const app = express();
 
